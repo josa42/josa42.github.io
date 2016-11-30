@@ -1,0 +1,7 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+theme = "simple"
+
+title = "My New Hugo Site"
+[params]
+  subtitle = "A Simple Theme"
