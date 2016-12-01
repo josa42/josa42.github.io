@@ -1,11 +1,9 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto';
-
 body {
   width: 600px;
   margin: 0 auto;
   font-size: 18px;
-  font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-family: sans-serif;
 }
 
 @media(max-width: 600px) {
@@ -35,29 +33,35 @@ p {
 }
 
 section#header {
-  margin: 40px 0;
+  margin: 36px 0;
 }
 
 section#header h1 {
   font-size: 2em;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-style: italic;
   font-size: 2em;
   margin: 0 0 9px 0;
 }
 
 section#header h2 {
-  font-family: Roboto, sans-serif;
+  font-family: sans-serif;
   font-weight: 500;
   font-style: italic;
   font-size: 0.8em;
   text-align: center;
 }
 
-section.summary {
+/*section.summary {
   padding: 0 0 0 10px;
   border-left: 1px solid black;
+  margin: 0 0 60px 0;
+}*/
+
+section.summary article {
+  padding: 0 0 0 10px;
+  border-left: 1px solid #ccc;
   margin: 0 0 60px 0;
 }
 
@@ -74,9 +78,14 @@ section.summary article {
 
 section h2 {
   font-size: 1.3em;
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
+  font-family: sans-serif;
+  font-weight: 400;
   font-style: italic;
+
+  margin-bottom: 6px;
+
+
+  letter-spacing: 0.0325em;
 }
 
 section h2 a {
@@ -86,16 +95,66 @@ section h2 a {
 section time {
   margin: 0 0 0 2px;
   font-size: 0.7em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 section article {
-  margin: 15px 0 0 0;
+  margin: 0 0 0 0;
 }
 
+section article p {
+  margin: 36px 0;
+}
+
+section article img {
+  margin: 0 -36px;
+  max-width: calc(100% + 72px);
+}
+
+@media(max-width: 672px) {
+  section article img {
+    margin: 0 0;
+    max-width: 100%;
+  }
+}
+
+section article table {
+  margin: 36px 0;
+  width: 100%;
+  color: #333;
+  border-collapse:
+  collapse; border-spacing: 0;
+}
+
+section article td, section article th {
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  padding: 3px 6px;
+}
+
+section article th {
+  font-weight: bold;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+section article td {
+  background: #FAFAFA;
+}
+
+section article tr:nth-child(odd) td { background: #FEFEFE; }
+section article tr:nth-child(even) td { background: #F8F8F8; }
+
+section article code {
+  margin: 36px 0;
+  font-family: 'Menlo', monospace;
+}
+
+
+
 section#paginator {
-  margin: 0 0 140px 0;
-  font-family: 'Roboto', sans-serif;
+  margin: 0 0 36px 0;
+  font-family: sans-serif;
   font-weight: 500;
   font-style: italic;
 }
