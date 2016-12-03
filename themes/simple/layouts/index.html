@@ -5,7 +5,7 @@
 {{ partial "header.html" . }}
 
 <section>
-  {{ range (.Paginator 5).Pages }}
+  {{ range where (.Paginator 5).Pages "Type" "post" }}
     {{ .Render "summary" }}
   {{ end }}
 </section>
