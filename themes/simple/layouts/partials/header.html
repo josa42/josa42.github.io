@@ -9,7 +9,7 @@
 <section id="page-navigation">
   <a href="{{ .Site.BaseURL }}">Blog</a>
 
-  {{ range where .Site.Pages "Type" "page" }}
+  {{ range where .Site.Pages ".Params.menu"  true }}
     <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
   {{ end }}
 </section>

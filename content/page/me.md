@@ -1,6 +1,7 @@
 +++
 title = "Me"
 weight = 0
+menu = true
 +++
 
 
