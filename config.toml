@@ -2,6 +2,6 @@ baseurl = "http://josa42.github.io/"
 languageCode = "en-us"
 theme = "simple"
 
-title = "My New Hugo Site"
-[params]
-  subtitle = "A Simple Theme"
+title = "Josa Gesell"
+# [params]
+#   subtitle = "A Simple Theme"

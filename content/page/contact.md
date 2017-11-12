@@ -1,7 +1,8 @@
 +++
 title = "Contact"
 weight = 10
-menu = true
+menu = false
+draft = true
 +++
 
 
