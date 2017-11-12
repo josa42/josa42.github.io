@@ -1,7 +1,6 @@
 +++
 title = "Me"
 weight = 0
-menu = false
 draft = true
 +++
 
