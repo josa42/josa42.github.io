@@ -3,8 +3,10 @@ languageCode = "en-us"
 theme = "simple"
 
 title = "Josa Gesell"
-# [params]
+
+[params]
 #   subtitle = "A Simple Theme"
+mainSections = ["post", "photo"]
 
 [ permalinks ]
   post = "/:year-:month-:day-:title"
