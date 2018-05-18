@@ -10,8 +10,6 @@
   {{ $currentNode := . }}
   {{ range .Site.Menus.main.ByWeight }}
     {{ .Pre }}
-    <a href="{{.URL}}" {{if $currentNode.IsMenuCurrent "main" . }}class="active"{{end}}>
-      {{ .Name }}
-    </a>
+    <a href="{{.URL}}" {{if $currentNode.IsMenuCurrent "main" . }}class="active"{{end}}>{{ .Name }}</a>
   {{end}}
 </section>
