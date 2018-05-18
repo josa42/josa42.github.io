@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>PHOTO Test Bild 2</title>
+      <title>PHOTO Test Bild 4</title>
       <link>//josa.gesell.me/photo/0003/</link>
       <pubDate>Fri, 18 May 2018 16:10:00 +0200</pubDate>
       
@@ -20,7 +20,21 @@
       <description></description>
       
         <image>
-          <url>//josa.gesell.me/photo/0003/cliff-3406204_1920_huc149c5af7fb64e72a3c2f77bdf5fbfb7_635587_1488x0_resize_q75_box.jpg</url>
+          <url>//josa.gesell.me/photo/0003/photo_huc149c5af7fb64e72a3c2f77bdf5fbfb7_635587_1488x0_resize_q75_box.jpg</url>
+        </image>
+      
+    </item>
+    
+    <item>
+      <title>PHOTO Test Bild 4</title>
+      <link>//josa.gesell.me/photo/0004/</link>
+      <pubDate>Fri, 18 May 2018 16:10:00 +0200</pubDate>
+      
+      <guid>//josa.gesell.me/photo/0004/</guid>
+      <description></description>
+      
+        <image>
+          <url>//josa.gesell.me/photo/0004/photo_hu2d057fbd42484a0cec8f8a63910dd1c6_392817_1488x0_resize_q75_box.jpg</url>
         </image>
       
     </item>
