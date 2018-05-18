@@ -16,7 +16,6 @@ body {
 }
 
 a, a:visited {
-  /*color: #ddd;*/
   color: #000;
   font-weight: 400;
   text-decoration: none;
@@ -166,29 +165,32 @@ section article th {
   border-bottom: 1px solid #DFDFDF;
 }
 
-section article tr:nth-child(odd)  td { background: #FEFEFE; }
-section article tr:nth-child(even) td { background: #F8F8F8; }
-section article tr:last-child      td { border-bottom: 1px solid #DFDFDF; }
+section article > table tr:nth-child(even) td { background: #F8F8F8; }
+
+section article .highlight {
+  margin: 36px -72px;
+  max-width: calc(100% + 144px);
+}
+
+@media(max-width: 672px) {
+  section article .highlight {
+    margin: 36px -20px;
+    max-width: calc(100% + 40px);
+  }
+}
+
+section article .highlight > div {
+  padding: 8px 20px;
+}
 
 section article pre {
-  margin: 36px 0;
   font-family: 'Menlo', monospace;
-  max-width: 100%;
-  overflow-y: auto;
-  background: #F8F8F8;
-}
-
-section article pre code.hljs {
-  background: #F8F8F8;
-  border-width: 1px 0 1px 0;
-  border-style: solid;
-  border-color: #DFDFDF;
-
   line-height: 1.4;
+  font-size: 82%;
 }
 
-section article pre code.hljs.hljs-line-numbers {
-  color: #DFDFDF;
+twitterwidget {
+  margin: 36px 0 !important;
 }
 
 section#paginator {
@@ -250,8 +252,20 @@ section#paginator #next:after {
 
 
 /* Page: me */
+.profile-picture {
+  display: block;
+  float: left;
+  padding: 0 63px 0 0;
+}
 .profile-picture img {
-  width: 100px;
+  width: 200px;
+  margin: 0 0 36px -72px;
+}
+
+h2::before {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .photo {
