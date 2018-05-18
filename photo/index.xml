@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Photos on Josa Gesell</title>
-    <link>http://josa42.github.io/photo/</link>
+    <link>//josa.gesell.me/photo/</link>
     <description>Recent content in Photos on Josa Gesell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 May 2018 14:00:00 +0200</lastBuildDate>
     
-        <atom:link href="http://josa42.github.io/photo/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="//josa.gesell.me/photo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PHOTO Test Bild</title>
-      <link>http://josa42.github.io/photo/0001/</link>
+      <link>//josa.gesell.me/photo/0001/</link>
       <pubDate>Fri, 18 May 2018 14:00:00 +0200</pubDate>
       
-      <guid>http://josa42.github.io/photo/0001/</guid>
+      <guid>//josa.gesell.me/photo/0001/</guid>
       <description></description>
       
         <image>

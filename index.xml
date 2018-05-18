@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Josa Gesell</title>
-    <link>http://josa42.github.io/</link>
+    <link>//josa.gesell.me/</link>
     <description>Recent content on Josa Gesell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 May 2018 14:00:00 +0200</lastBuildDate>
     
-	<atom:link href="http://josa42.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//josa.gesell.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Imprint</title>
-      <link>http://josa42.github.io/imprint/</link>
+      <link>//josa.gesell.me/imprint/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://josa42.github.io/imprint/</guid>
+      <guid>//josa.gesell.me/imprint/</guid>
       <description>Legal Disclosure Information in accordance with section 5 TMG
 Josa Gesell
 Burckhardtstr. 62
@@ -29,10 +29,10 @@ The contents of our pages have been created with the utmost care. However, we ca
     
     <item>
       <title>Test Bild</title>
-      <link>http://josa42.github.io/photo/0001/</link>
+      <link>//josa.gesell.me/photo/0001/</link>
       <pubDate>Fri, 18 May 2018 14:00:00 +0200</pubDate>
       
-      <guid>http://josa42.github.io/photo/0001/</guid>
+      <guid>//josa.gesell.me/photo/0001/</guid>
       <description></description>
     </item>
     
