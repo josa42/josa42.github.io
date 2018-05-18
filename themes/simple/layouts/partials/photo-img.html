@@ -1,8 +1,18 @@
 
 {{ $id := .UniqueID }}
+{{ $page := . }}
 {{ with (.Resources.GetMatch "*.jpg") }}
   <a href="#{{ $id }}">
     <img src="{{ (.Resize "1488x").RelPermalink }}" />
   </a>
-  <a href="#_" id="{{ $id }}" class="photo" style="background-image:url({{ (.Resize "1488x").RelPermalink }})"></a>
+  <a href="#_" id="{{ $id }}" class="photo" style="background-image:url({{ (.Resize "1488x").RelPermalink }})">
+    {{ with $page.PrevInSection }}
+      <span class="prev" onclick="event.preventDefault(); location.href = '{{ .Permalink }}#{{ .UniqueID }}'"></span>
+    {{ end }}
+
+    {{ with $page.NextInSection }}
+      <span class="next" onclick="event.preventDefault(); location.href = '{{ .Permalink }}#{{ .UniqueID }}'"></span>
+    {{ end }}
+  </a>
 {{ end }}
+

@@ -258,6 +258,10 @@ section#paginator #next:after {
   display: none;
 }
 
+.photo a {
+  display: block;
+}
+
 .photo:target {
   display: block;
   outline: none;
@@ -275,3 +279,26 @@ section#paginator #next:after {
 
   overflow-y: scroll;
 }
+
+.photo:target .next, .photo:target .prev {
+  position: absolute;
+  top: 0;
+  
+  display: block;
+  width: 25%;
+  height: 100%;
+  
+
+}
+
+.photo:target .prev {
+  left: 0;
+  /* background: rgba(255,0,0,0.2); */
+  cursor: w-resize;
+}
+.photo:target .next {
+  right: 0;
+  /* background: rgba(0,255,0,0.2); */
+  cursor: e-resize;
+}
+
