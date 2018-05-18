@@ -1,4 +1,4 @@
-baseurl = "//josa.gesell.me/"
+baseurl = "https://josa.gesell.me/"
 languageCode = "en-us"
 theme = "simple"
 
