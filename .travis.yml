@@ -24,5 +24,4 @@ script:
     - hugo
 
 after_success:
-    # - echo "rcoedo.com" > ./public/CNAME
     - bash ./bin/deploy.sh
