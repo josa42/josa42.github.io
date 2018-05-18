@@ -22,7 +22,7 @@
       <description>{{ .Summary | html }}</description>
       {{ with (.Resources.GetMatch "*.jpg") }}
         <image>
-          <url>{{ (.Resize "1488x").RelPermalink }}</url>
+          <url>{{ (.Resize "1488x").Permalink }}</url>
         </image>
       {{ end }}
     </item>
