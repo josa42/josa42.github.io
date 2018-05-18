@@ -6,10 +6,24 @@
     <description>Recent content in Photos on Josa Gesell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 May 2018 16:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 18 May 2018 16:10:00 +0200</lastBuildDate>
     
         <atom:link href="//josa.gesell.me/photo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PHOTO Test Bild 2</title>
+      <link>//josa.gesell.me/photo/0003/</link>
+      <pubDate>Fri, 18 May 2018 16:10:00 +0200</pubDate>
+      
+      <guid>//josa.gesell.me/photo/0003/</guid>
+      <description></description>
+      
+        <image>
+          <url>//josa.gesell.me/photo/0003/cliff-3406204_1920_huc149c5af7fb64e72a3c2f77bdf5fbfb7_635587_1488x0_resize_q75_box.jpg</url>
+        </image>
+      
+    </item>
     
     <item>
       <title>PHOTO Test Bild 2</title>
@@ -20,7 +34,7 @@
       <description></description>
       
         <image>
-          <url>/photo/0002/photo_hu76bc0db4a217ec0d828e995b141fb3f8_676354_1488x0_resize_q75_box.jpg</url>
+          <url>//josa.gesell.me/photo/0002/photo_hu76bc0db4a217ec0d828e995b141fb3f8_676354_1488x0_resize_q75_box.jpg</url>
         </image>
       
     </item>
@@ -34,7 +48,7 @@
       <description></description>
       
         <image>
-          <url>/photo/0001/photo_hu3d03a01dcc18bc5be0e67db3d8d209a6_1688308_1488x0_resize_q75_box.jpg</url>
+          <url>//josa.gesell.me/photo/0001/photo_hu3d03a01dcc18bc5be0e67db3d8d209a6_1688308_1488x0_resize_q75_box.jpg</url>
         </image>
       
     </item>
