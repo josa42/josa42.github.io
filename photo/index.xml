@@ -6,10 +6,21 @@
     <description>Recent content in Photos on Josa Gesell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 May 2018 21:38:06 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 18 May 2018 22:09:18 +0200</lastBuildDate>
     
         <atom:link href="https://josa.gesell.me/photo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Foo</title>
+      <link>https://josa.gesell.me/photo/0009/</link>
+      <pubDate>Fri, 18 May 2018 22:09:18 +0200</pubDate>
+      
+      <guid>https://josa.gesell.me/photo/0009/</guid>
+      
+      <description>https://josa.gesell.me/photo/0009/photo_huecdebc3b015c08554ef7996be931f017_77244_1488x0_resize_q75_box.jpg</description>
+      
+    </item>
     
     <item>
       <title>Test bild 8</title>
