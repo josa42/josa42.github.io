@@ -1,8 +1,12 @@
 baseurl = "https://josa.gesell.me/"
 languageCode = "en-us"
-theme = "simple"
 
 title = "Josa Gesell"
+
+pygmentsStyle = "monokai"
+pygmentsCodefences = true
+pygmentsCodeFencesGuessSyntax = true
+pygmentsOptions = "linenos=true"
 
 [params]
 subtitle = "My Blog"
@@ -17,3 +21,5 @@ mainSections = ["post", "photo"]
     name = "Posts"
     url = "/"
     weight = -1
+
+  

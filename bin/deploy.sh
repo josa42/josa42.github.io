@@ -9,8 +9,6 @@ if [ ! -d "$SOURCE_DIR" ]; then
   exit 1
 fi
 
-REPO=$(git config remote.origin.url)
-
 if [ "${TRAVIS_BRANCH}" != "${DEPLOY_BRANCH}" ]; then
   echo "Travis should only deploy from the DEPLOY_BRANCH ($DEPLOY_BRANCH) branch"
   exit 0
@@ -41,6 +39,7 @@ if [ -n "$TRAVIS_BUILD_ID" ]; then
 
   # switch both git and https protocols as we don't know which travis
   # is using today (it changed!)
+  REPO=$(git config remote.origin.url)
   REPO=${REPO/git:\/\/github.com\//git@github.com:}
   REPO=${REPO/https:\/\/github.com\//git@github.com:}
 
@@ -61,8 +60,6 @@ rsync -rt --delete --exclude=".git" --exclude=".travis.yml" --exclude="CNAME" $S
 cd $TARGET_DIR
 
 git add -A .
-git config --global user.name "$GIT_NAME"
-git config --global user.email "$GIT_EMAIL"
 git commit --allow-empty -m "Built from commit $REV"
 git push $REPO $TARGET_BRANCH
 
