@@ -1,7 +1,7 @@
 +++
 title = "Imprint"
-weight = 20
-menu = 2
+menu = "main"
+weight = 2
 +++
 
 ## Legal Disclosure

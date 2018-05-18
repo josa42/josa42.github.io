@@ -7,9 +7,11 @@
 </section>
 
 <section id="page-navigation">
-  <a href="{{ .Site.BaseURL }}">Posts</a>
-
-  {{ range sort (where .Site.Pages ".Params.menu" "!=" nil) ".Params.menu" }}
-    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-  {{ end }}
+  {{ $currentNode := . }}
+  {{ range .Site.Menus.main.ByWeight }}
+    {{ .Pre }}
+    <a href="{{.URL}}" {{if $currentNode.IsMenuCurrent "main" . }}class="active"{{end}}>
+      {{ .Name }}
+    </a>
+  {{end}}
 </section>

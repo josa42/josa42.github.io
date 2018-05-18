@@ -5,8 +5,15 @@ theme = "simple"
 title = "Josa Gesell"
 
 [params]
-#   subtitle = "A Simple Theme"
+subtitle = "My Blog"
 mainSections = ["post", "photo"]
 
 [ permalinks ]
   post = "/:year-:month-:day-:title"
+  page = "/:title"
+
+[ menu ]
+  [[ menu.main ]]
+    name = "Posts"
+    url = "/"
+    weight = -1
