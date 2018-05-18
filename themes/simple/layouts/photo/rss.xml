@@ -20,10 +20,10 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | html }}</description>
-      {{ if or (isset .Params "image_src")}}
-      <image>
-        <url>{{ .Params.image_src }}</url>
-      </image>
+      {{ with (.Resources.GetMatch "*.jpg") }}
+        <image>
+          <url>{{ (.Resize "1488x").RelPermalink }}</url>
+        </image>
       {{ end }}
     </item>
     {{ end }}

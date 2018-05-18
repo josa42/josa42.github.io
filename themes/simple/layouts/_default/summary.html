@@ -5,8 +5,8 @@
   </h2>
   <time>{{ .Date.Format "2. January, 2006"}}</time>
   <article>
-    {{ if or (isset .Params "image_src")}}
-    <img src="{{ .Params.image_src }}" />
+    {{ with (.Page.Resources.GetMatch "*.jpg") }}
+      <img src="{{ (.Resize "1488x").RelPermalink }}" />
     {{ else }}
     <p>{{ .Content }}</p>
     {{ end }}

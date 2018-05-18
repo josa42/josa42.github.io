@@ -6,8 +6,10 @@
   <section>
     <h2>{{ .Title }}</h2>
     <time>{{ .Date.Format "2. January, 2006"}}</time>
-    <article>
-      <img src="{{ .Params.image_src }}" />
+    <article>  
+      {{ with (.Page.Resources.GetMatch "*.jpg") }}
+        <img src="{{ (.Resize "1488x").RelPermalink }}" />
+      {{ end }}
       {{ .Content }}
     </article>
   </section>
