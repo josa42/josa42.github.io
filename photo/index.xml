@@ -6,21 +6,21 @@
     <description>Recent content in Photos on Josa Gesell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 May 2018 16:10:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 18 May 2018 16:20:00 +0200</lastBuildDate>
     
         <atom:link href="https://josa.gesell.me/photo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>PHOTO Test Bild 4</title>
-      <link>https://josa.gesell.me/photo/0003/</link>
-      <pubDate>Fri, 18 May 2018 16:10:00 +0200</pubDate>
+      <title>PHOTO Test Bild 5</title>
+      <link>https://josa.gesell.me/photo/0005/</link>
+      <pubDate>Fri, 18 May 2018 16:20:00 +0200</pubDate>
       
-      <guid>https://josa.gesell.me/photo/0003/</guid>
+      <guid>https://josa.gesell.me/photo/0005/</guid>
       <description></description>
       
         <image>
-          <url>https://josa.gesell.me/photo/0003/photo_huc149c5af7fb64e72a3c2f77bdf5fbfb7_635587_1488x0_resize_q75_box.jpg</url>
+          <url>https://josa.gesell.me/photo/0005/photo_hu3d03a01dcc18bc5be0e67db3d8d209a6_910480_1488x0_resize_q75_box.jpg</url>
         </image>
       
     </item>
@@ -28,7 +28,7 @@
     <item>
       <title>PHOTO Test Bild 4</title>
       <link>https://josa.gesell.me/photo/0004/</link>
-      <pubDate>Fri, 18 May 2018 16:10:00 +0200</pubDate>
+      <pubDate>Fri, 18 May 2018 16:15:00 +0200</pubDate>
       
       <guid>https://josa.gesell.me/photo/0004/</guid>
       <description></description>
@@ -40,15 +40,15 @@
     </item>
     
     <item>
-      <title>PHOTO Test Bild 5</title>
-      <link>https://josa.gesell.me/photo/0005/</link>
+      <title>PHOTO Test Bild 3</title>
+      <link>https://josa.gesell.me/photo/0003/</link>
       <pubDate>Fri, 18 May 2018 16:10:00 +0200</pubDate>
       
-      <guid>https://josa.gesell.me/photo/0005/</guid>
+      <guid>https://josa.gesell.me/photo/0003/</guid>
       <description></description>
       
         <image>
-          <url>https://josa.gesell.me/photo/0005/photo_hu3d03a01dcc18bc5be0e67db3d8d209a6_910480_1488x0_resize_q75_box.jpg</url>
+          <url>https://josa.gesell.me/photo/0003/photo_huc149c5af7fb64e72a3c2f77bdf5fbfb7_635587_1488x0_resize_q75_box.jpg</url>
         </image>
       
     </item>
