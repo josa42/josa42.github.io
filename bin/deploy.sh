@@ -56,14 +56,13 @@ TARGET_DIR=$(mktemp -d /tmp/$REPO_NAME.XXXX)
 REV=$(git rev-parse HEAD)
 
 git clone --branch ${TARGET_BRANCH} ${REPO} ${TARGET_DIR}
-rsync -rt --delete --exclude=".git" --exclude=".travis.yml" $SOURCE_DIR/ $TARGET_DIR/
+rsync -rt --delete --exclude=".git" --exclude=".travis.yml" --exclude="CNAME" $SOURCE_DIR/ $TARGET_DIR/
 
 cd $TARGET_DIR
+
 git add -A .
+git config --global user.name "$GIT_NAME"
+git config --global user.email "$GIT_EMAIL"
 git commit --allow-empty -m "Built from commit $REV"
 git push $REPO $TARGET_BRANCH
 
-git config --global user.name "$GIT_NAME"
-git config --global user.email "$GIT_EMAIL"
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
