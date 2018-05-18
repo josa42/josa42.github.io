@@ -1,4 +1,4 @@
-baseurl = "http://josa42.github.io/"
+baseurl = "//josa.gesell.me/"
 languageCode = "en-us"
 theme = "simple"
 
