@@ -7,6 +7,11 @@
   </url>
   
   <url>
+    <loc>//josa.gesell.me/photo/0002/</loc>
+    <lastmod>2018-05-18T16:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//josa.gesell.me/photo/0001/</loc>
     <lastmod>2018-05-18T14:00:00+02:00</lastmod>
   </url>
@@ -18,7 +23,7 @@
   
   <url>
     <loc>//josa.gesell.me/</loc>
-    <lastmod>2018-05-18T14:00:00+02:00</lastmod>
+    <lastmod>2018-05-18T16:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -29,7 +34,7 @@
   
   <url>
     <loc>//josa.gesell.me/photo/</loc>
-    <lastmod>2018-05-18T14:00:00+02:00</lastmod>
+    <lastmod>2018-05-18T16:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
