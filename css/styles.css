@@ -86,19 +86,14 @@ section#page-navigation {
 
 section#page-navigation a {
   padding: 0 16px 0 14px;
-  /*font-weight: 300;*/
+}
+
+section#page-navigation a.active {
+  text-decoration: underline;
 }
 
 section#page-navigation a:not(:last-child) {
   border-right: 1px solid #ccc;
-}
-
-section.summary article {
-  margin: 0 0 60px 0;
-}
-
-section.summary article {
-  margin: 15px 0 0 0;
 }
 
 section h2 {
