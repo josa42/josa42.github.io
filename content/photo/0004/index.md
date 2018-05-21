@@ -1,5 +1,0 @@
-+++
-date = "2018-05-18T16:15:00+02:00"
-title = "Test Bild 4"
-layout = "photo"
-+++
