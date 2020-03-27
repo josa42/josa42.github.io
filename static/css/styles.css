@@ -1,4 +1,4 @@
-/* @media (prefers-dark-interface) { 
+/* @media (prefers-dark-interface) {
   html {
     background: black !important;
   }
@@ -24,7 +24,7 @@ body {
 body {
   background-color: #fff;
   background-color: var(--main-bg-color);
-  
+
   width: 600px;
   margin: 0 auto;
   color: #000;
@@ -152,11 +152,11 @@ section article {
 }
 
 section article p {
-  margin: 36px 0;
+  margin: 36px 0 0;
 }
 
 section article ul {
-  margin: 36px 0;
+  margin: 36px 0 0;
   padding: 0 0 0 16px;
   list-style-type: disc;
   line-height: 1.4;
@@ -167,7 +167,7 @@ section article ul ul {
 }
 
 section article img {
-  margin: 36px -72px;
+  margin: 36px -72px 0;
   max-width: calc(100% + 144px);
 }
 
@@ -309,12 +309,12 @@ h2::before {
 .photo:target {
   display: block;
   outline: none;
-  
+
   background-color: black;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center; 
-  
+  background-position: center center;
+
   position: fixed;
   top: 0;
   bottom: 0;
