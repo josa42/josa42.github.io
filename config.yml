@@ -10,6 +10,14 @@ markup:
     noClasses: false
     tabWidth: 2
 
+outputs:
+  page: ["HTML"]
+  post: ["HTML"]
+  home: ["HTML"]
+  section: ["HTML", "RSS"]
+  taxonomyTerm: ["HTML"]
+  taxonomy: ["HTML"]
+
 params:
   social:
     - label: Josa Gesell on GitHub
@@ -28,9 +36,9 @@ params:
       link: https://www.linkedin.com/in/josa-gesell-391b47138/
       icon: icons/linkedin
 
-    - label: RSS Feed
-      link: /index.xml
-      icon: icons/rss
+    # - label: RSS Feed
+    #   link: /post/index.xml
+    #   icon: icons/rss
 
 permalinks:
   post: "/:year-:month-:day-:title"
