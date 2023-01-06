@@ -1,0 +1,59 @@
+body {
+  --icons-color-default: var(--main-sub-text-color);
+
+  --icons-color-github-hover: rgb(0,0,0);
+  --icons-color-mastodon-hover: rgb(88,80,236);
+  --icons-color-linkedin-hover: rgb(26,86,219);
+  --icons-color-twitter-hover: rgb(63,131,248);
+  --icons-color-rss-hover: rgb(255,90,31);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --icons-color-github-hover: rgb(255,255,255);
+  }
+}
+
+.icon-github {
+  color: var(--icons-color-default);
+  &:hover {
+    color: var(--icons-color-github-hover);
+  }
+}
+
+.icon-mastodon {
+  color: var(--icons-color-default);
+  &:hover {
+    color: rgb(88,80,236);
+    color: var(--icons-color-mastodon-hover);
+  }
+}
+
+.icon-linkedin {
+  color: var(--icons-color-default);
+  &:hover {
+    color: rgb(26,86,219);
+    color: var(--icons-color-linkedin-hover);
+  }
+}
+
+.icon-twitter {
+  color: var(--icons-color-default);
+  &:hover {
+    color: var(--icons-color-twitter-hover);
+  }
+}
+
+.icon-rss {
+  color: var(--icons-color-default);
+  &:hover {
+    color: var(--icons-color-rss-hover);
+  }
+}
+
+.icons {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

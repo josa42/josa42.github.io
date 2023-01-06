@@ -12,7 +12,29 @@ params:
   # subtitle: "My Blog"
   mainSections: ["post", "photo"]
 
+  social:
+    - label: Josa Gesell on GitHub
+      link: https://github.com/josa42
+      icon: icons/github
+
+    - label: Josa Gesell on Mastodon
+      link: http://mastodon.social/@josa
+      icon: icons/mastodon
+
+    - label: Josa Gesell on Twitter
+      link: https://twitter.com/josa_
+      icon: icons/twitter
+
+    - label: Josa Gesell on LinkedIn
+      link: https://www.linkedin.com/in/josa-gesell-391b47138/
+      icon: icons/linkedin
+
+    - label: RSS Feed
+      link: /index.xml
+      icon: icons/rss
+
 permalinks:
   post: "/:year-:month-:day-:title"
   page: "/:title"
+
 
