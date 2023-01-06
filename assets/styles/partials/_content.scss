@@ -1,0 +1,82 @@
+section article {
+  margin: 0 0 0 0;
+
+  --block-gap: 48px;
+}
+
+section article > * {
+  margin: var(--block-gap) 0;
+}
+
+section article > img {
+  display: block;
+}
+
+section article ul {
+  padding: 0 0 0 16px;
+  list-style-type: disc;
+  line-height: 1.4;
+}
+
+section article ul ul {
+  margin: 0;
+}
+
+section article img {
+  margin: var(--block-gap) -72px;
+  max-width: calc(100% + 144px);
+}
+
+@media(max-width: 672px) {
+  section article img {
+    margin: var(--block-gap) -20px;
+    max-width: calc(100% + 40px);
+  }
+}
+
+section article table {
+  width: 100%;
+  border-collapse:
+  collapse; border-spacing: 0;
+}
+
+section article td, section article th {
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  padding: 3px 6px;
+}
+
+section article th {
+  font-weight: bold;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+section article > table tr:nth-child(even) td { background: var(--main-bg-highlight-color); }
+
+section article .highlight {
+  margin: var(--block-gap) -72px;
+  width: calc(100% + 144px);
+}
+
+@media(max-width: 672px) {
+  section article .highlight {
+    margin: var(--block-gap) -20px;
+    width: calc(100% + 40px);
+  }
+}
+
+section article .highlight > div {
+  padding: 8px 20px;
+}
+
+section article pre {
+  font-family: 'Menlo', monospace;
+  line-height: 1.4;
+  font-size: 82%;
+}
+
+section article .twitter-tweet {
+  margin: var(--block-gap) 0 !important;
+}
+

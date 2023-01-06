@@ -3,15 +3,14 @@ languageCode: "en-us"
 
 title: "Josa Gesell"
 
-pygmentsStyle: "monokai"
-pygmentsCodefences: true
-pygmentsCodeFencesGuessSyntax: true
-pygmentsOptions: "linenos=true"
+markup:
+  highlight:
+    guessSyntax: true
+    lineNos: true
+    noClasses: false
+    tabWidth: 2
 
 params:
-  # subtitle: "My Blog"
-  mainSections: ["post", "photo"]
-
   social:
     - label: Josa Gesell on GitHub
       link: https://github.com/josa42

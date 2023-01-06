@@ -1,0 +1,20 @@
+section#page-navigation {
+  margin: 36px 0;
+  text-align: center;
+  font-size: var(--nav-font-size);
+}
+
+section#page-navigation a {
+  padding: 0 16px 0 14px;
+}
+
+section#page-navigation a.active {
+  text-decoration: underline;
+}
+
+section#page-navigation a:not(:last-child) {
+  border-right: 1px solid #ccc;
+  border-right: 1px solid var(--main-divider-color);
+}
+
+

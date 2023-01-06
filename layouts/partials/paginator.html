@@ -1,4 +1,5 @@
 
+{{ if or .Paginator.HasPrev .Paginator.HasNext }}
 <section id="paginator">
   {{ if .Paginator.HasPrev }}
     <a id="previous" href="{{ .Paginator.Prev.URL }}">Newer</a>
@@ -8,3 +9,4 @@
     <a id="next" href="{{ .Paginator.Next.URL }}">Older</a>
   {{ end }}
 </section>
+{{ end }}

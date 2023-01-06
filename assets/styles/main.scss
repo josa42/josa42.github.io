@@ -6,6 +6,8 @@
 
 body {
   --main-bg-color: #fff;
+  --main-bg-highlight-color: #f0f0f0;
+
   --main-text-color: #000;
   --main-sub-text-color: #666;
   --main-divider-color: #ccc;
@@ -17,6 +19,8 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     --main-bg-color: #222;
+    --main-bg-highlight-color: #262626;
+
     --main-text-color: #ccc;
     --main-sub-text-color: #888;
     --main-divider-color: #777;
@@ -100,85 +104,6 @@ section time {
   font-weight: 400;
 }
 
-section article {
-  margin: 0 0 0 0;
-}
-
-section article p {
-  margin: 36px 0;
-}
-
-section article ul {
-  margin: 36px 0;
-  padding: 0 0 0 16px;
-  list-style-type: disc;
-  line-height: 1.4;
-}
-
-section article ul ul {
-  margin: 0;
-}
-
-section article img {
-  margin: 36px -72px;
-  max-width: calc(100% + 144px);
-}
-
-@media(max-width: 672px) {
-  section article img {
-    margin: 36px -20px;
-    max-width: calc(100% + 40px);
-  }
-}
-
-section article table {
-  margin: 36px 0;
-  width: 100%;
-  color: #333;
-  border-collapse:
-  collapse; border-spacing: 0;
-}
-
-section article td, section article th {
-  border: none;
-  height: 30px;
-  line-height: 30px;
-  padding: 3px 6px;
-}
-
-section article th {
-  font-weight: bold;
-  border-bottom: 1px solid #DFDFDF;
-}
-
-section article > table tr:nth-child(even) td { background: #F8F8F8; }
-
-section article .highlight {
-  margin: 36px -72px;
-  max-width: calc(100% + 144px);
-}
-
-@media(max-width: 672px) {
-  section article .highlight {
-    margin: 36px -20px;
-    max-width: calc(100% + 40px);
-  }
-}
-
-section article .highlight > div {
-  padding: 8px 20px;
-}
-
-section article pre {
-  font-family: 'Menlo', monospace;
-  line-height: 1.4;
-  font-size: 82%;
-}
-
-twitterwidget {
-  margin: 36px 0 !important;
-}
-
 section#paginator {
   margin: 72px 0 72px 0;
   padding: 0 4px;
@@ -219,6 +144,7 @@ section#paginator #next:after {
 
 #content {
   margin: 0 0 100px 0;
+  min-height: calc(100vh - 350px);
 }
 
 .videoWrapper {
@@ -278,5 +204,8 @@ h2::before {
 }
 
 @import "partials/header";
+@import "partials/navigation";
+@import "partials/content";
+@import "partials/syntax";
 @import "partials/icons";
 @import "partials/profile";
