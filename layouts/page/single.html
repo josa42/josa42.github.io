@@ -1,7 +1,4 @@
-{{ partial "head.html"  }}
-{{ partial "header.html" . }}
-{{ $baseurl := .Site.BaseURL }}
-
+{{ define "main" }}
 <div id="content">
   <section>
     <h2>{{ .Title }}</h2>
@@ -12,5 +9,4 @@
     </article>
   </section>
 </div>
-
-{{ partial "footer.html" . }}
+{{ end }}

@@ -1,18 +1,10 @@
-{{ partial "head.html" . }}
+{{ define "main" }}
+<div id="content">
+  <section>
+    <article>
+      {{ .Content }}
+    </article>
+  </section>
+</div>
+{{ end }}
 
-<body>
-
-{{ partial "header.html" . }}
-
-<section>
-  {{ range where (.Paginator 10).Pages "Type" "in" .Site.Params.mainSections }}
-      {{ .Render "summary" }}
-  {{ end }}
-  
-</section>
-
-{{ partial "paginator.html" . }}
-
-{{ partial "footer.html" . }}
-
-</body>

@@ -1,16 +1,12 @@
-{{ partial "head.html"  }}
-{{ partial "header.html" . }}
-{{ $baseurl := .Site.BaseURL }}
-
+{{ define "main" }}
 <div id="content">
   <section>
     <h2>{{ .Title }}</h2>
     <time>{{ .Date.Format "2. January, 2006"}}</time>
     <article>
-        {{ partial "photo-img" . }}
+      {{ partial "photo-img" . }}
       {{ .Content }}
     </article>
   </section>
 </div>
-
-{{ partial "footer.html" . }}
+{{ end }}
