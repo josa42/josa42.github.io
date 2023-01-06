@@ -6,10 +6,9 @@
 </section>
 
 <section id="page-navigation">
-  {{ $currentPage := . }}
   {{ range .Site.Menus.main.ByWeight }}
     {{ if or (not .Page.IsSection) (.Page.Pages)}}
-      {{ .Pre }}<a href="{{.URL}}" {{if $currentPage.IsMenuCurrent "main" . }}class="active"{{end}}>{{ .Name }}</a>
+      {{ .Pre }}<a href="{{.URL}}" {{if $.Page.IsMenuCurrent "main" . }}class="active"{{end}}>{{ .Name }}</a>
     {{ end }}
   {{end}}
 </section>

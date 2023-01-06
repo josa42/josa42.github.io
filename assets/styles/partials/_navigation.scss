@@ -6,10 +6,11 @@ section#page-navigation {
 
 section#page-navigation a {
   padding: 0 16px 0 14px;
+  color: var(--main-sub-text-color);
 }
 
 section#page-navigation a.active {
-  text-decoration: underline;
+  color: var(--main-text-color);
 }
 
 section#page-navigation a:not(:last-child) {
