@@ -9,6 +9,9 @@ body {
   --main-text-color: #000;
   --main-sub-text-color: #666;
   --main-divider-color: #ccc;
+
+  --main-font-size: 16px;
+  --nav-font-size: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,14 +25,13 @@ body {
 
 
 body {
-  background-color: #fff;
   background-color: var(--main-bg-color);
 
   width: 600px;
   margin: 0 auto;
   color: #000;
   color: var(--main-text-color);
-  font-size: 16px;
+  font-size: var(--main-font-size);
   font-weight: 300;
   font-family: sans-serif;
 }
@@ -73,55 +75,6 @@ blockquote p {
   border-left: 1px solid #ccc;
   border-left: 1px solid var(--main-divider-color);
   padding: 0 0 0 10px;
-}
-
-section#header {
-  margin: 36px 0;
-}
-
-section#header h1 {
-  font-size: 2em;
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: 600;
-
-  text-decoration: none;
-
-  margin: 0 0 9px 0;
-}
-
-section#header h2 {
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 0.8em;
-  text-align: center;
-}
-
-@media(max-width: 672px) {
-  section#header {
-    margin: 18px 0;
-  }
-  section#header h1 {
-    font-size: 1.3em;
-  }
-}
-
-section#page-navigation {
-  margin: 36px 0;
-  text-align: center;
-}
-
-section#page-navigation a {
-  padding: 0 16px 0 14px;
-}
-
-section#page-navigation a.active {
-  text-decoration: underline;
-}
-
-section#page-navigation a:not(:last-child) {
-  border-right: 1px solid #ccc;
-  border-right: 1px solid var(--main-divider-color);
 }
 
 section h2 {
@@ -324,4 +277,6 @@ h2::before {
   overflow-y: scroll;
 }
 
-@import "partials/icons"
+@import "partials/header";
+@import "partials/icons";
+@import "partials/profile";

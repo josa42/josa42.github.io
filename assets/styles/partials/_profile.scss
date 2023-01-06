@@ -1,0 +1,36 @@
+body {
+  --icons-color-avatar: #d4d4d4;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --icons-color-avatar: #3C3C3C;
+  }
+}
+
+.profile-head {
+
+  margin: 80px 0;
+
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 200px;
+
+  .avatar {
+    background-color: var(--icons-color-avatar);
+    border-radius: 50%;
+
+    width: 180px;
+    height: 180px;
+
+    border: 10px solid var(--icons-color-avatar);
+  }
+
+  .text {
+    font-size: 48px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+  }
+}

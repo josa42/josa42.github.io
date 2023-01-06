@@ -1,0 +1,52 @@
+section#header {
+  margin: 36px 0;
+}
+
+section#header h1 {
+  font-size: 2em;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  margin: 0 0 9px 0;
+}
+
+section#header h2 {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+@media(max-width: 672px) {
+  section#header {
+    margin: 18px 0;
+  }
+  section#header h1 {
+    font-size: 1.3em;
+  }
+}
+
+
+
+section#page-navigation {
+  margin: 36px 0;
+  text-align: center;
+  font-size: var(--nav-font-size);
+}
+
+section#page-navigation a {
+  padding: 0 16px 0 14px;
+}
+
+section#page-navigation a.active {
+  text-decoration: underline;
+}
+
+section#page-navigation a:not(:last-child) {
+  border-right: 1px solid #ccc;
+  border-right: 1px solid var(--main-divider-color);
+}
+

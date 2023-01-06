@@ -1,0 +1,24 @@
+    {{ $img := resources.Get .path -}}
+
+    <!-- Resize, Fit, Fill, Crop  -->
+    {{ with .resize }}
+    {{   $img = $img.Resize . }}
+    {{ end }}
+
+    {{ with .crop }}
+    {{   $img = $img.Crop . }}
+    {{ end }}
+
+    {{ with .fill }}
+    {{   $img = $img.Fill . }}
+    {{ end }}
+
+    {{ with .fit }}
+    {{   $img = $img.Fit . }}
+    {{ end }}
+
+    {{ $img = resources.Fingerprint "sha512" $img -}}
+
+    <img class="{{ .class }}" src="{{ $img.Permalink }}" integrity="{{ $img.Data.Integrity }}">
+
+
