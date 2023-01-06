@@ -14,7 +14,9 @@
     {{- end }}
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/styles.css?v={{ now.Unix }}" />
+
+    {{ $css_main := resources.Get "styles/main.scss" | toCSS | resources.Minify | resources.Fingerprint "sha512" -}}
+    <link rel="stylesheet" href="{{ $css_main.Permalink }}" integrity="{{ $css_main.Data.Integrity }}">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">

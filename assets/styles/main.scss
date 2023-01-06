@@ -1,4 +1,4 @@
-/* @media (prefers-dark-interface) { 
+/* @media (prefers-dark-interface) {
   html {
     background: black !important;
   }
@@ -24,7 +24,7 @@ body {
 body {
   background-color: #fff;
   background-color: var(--main-bg-color);
-  
+
   width: 600px;
   margin: 0 auto;
   color: #000;
@@ -309,12 +309,12 @@ h2::before {
 .photo:target {
   display: block;
   outline: none;
-  
+
   background-color: black;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center; 
-  
+  background-position: center center;
+
   position: fixed;
   top: 0;
   bottom: 0;
