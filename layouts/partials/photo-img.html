@@ -1,5 +1,5 @@
 
-{{ $id := .UniqueID }}
+{{ $id := .File.UniqueID }}
 {{ with (.Resources.GetMatch "*.jpg") }}
   <a href="#{{ $id }}">
     <img src="{{ (.Resize "1488x").RelPermalink }}" />
