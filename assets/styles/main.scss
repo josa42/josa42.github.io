@@ -38,6 +38,8 @@ body {
   font-size: var(--main-font-size);
   font-weight: 300;
   font-family: sans-serif;
+
+  overflow-x: hidden;
 }
 
 @media(max-width: 600px) {
