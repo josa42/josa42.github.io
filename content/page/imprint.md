@@ -1,8 +1,8 @@
-+++
-title = "Imprint"
-menu = "main"
-weight = 2
-+++
+---
+title: Imprint
+menu: "main"
+weight: 100
+---
 
 ## Legal Disclosure
 

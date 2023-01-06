@@ -1,0 +1,24 @@
+baseurl: "https://josa.gesell.me/"
+languageCode: "en-us"
+
+title: "Josa Gesell"
+
+pygmentsStyle: "monokai"
+pygmentsCodefences: true
+pygmentsCodeFencesGuessSyntax: true
+pygmentsOptions: "linenos=true"
+
+params:
+  subtitle: "My Blog"
+  mainSections: ["post", "photo"]
+
+permalinks:
+  post: "/:year-:month-:day-:title"
+  page: "/:title"
+
+menu:
+  main:
+    - name: "Posts"
+      url: "/"
+      weight: 2
+
