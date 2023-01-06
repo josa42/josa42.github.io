@@ -7,11 +7,13 @@ section#page-navigation {
 section#page-navigation a {
   padding: 0 16px 0 14px;
   color: var(--main-sub-text-color);
+
+  &.active {
+    color: var(--main-text-color);
+    cursor: default;
+  }
 }
 
-section#page-navigation a.active {
-  color: var(--main-text-color);
-}
 
 section#page-navigation a:not(:last-child) {
   border-right: 1px solid #ccc;

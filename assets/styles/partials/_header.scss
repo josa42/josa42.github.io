@@ -13,11 +13,10 @@ section#header h1 {
   margin: 0 0 9px 0;
 }
 
-section#header h2 {
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 0.8em;
-  text-align: center;
+section#header h1 a {
+  &, &:visited {
+    color: var(--main-sub-text-color);
+  }
 }
 
 @media(max-width: 672px) {

@@ -83,19 +83,20 @@ blockquote p {
   padding: 0 0 0 10px;
 }
 
-section h2 {
-  font-size: 1.3em;
-  font-family: sans-serif;
-  font-weight: 400;
+section {
+  h2 {
+    font-size: 1.3em;
+    margin-bottom: 6px;
+  }
 
-  margin-bottom: 6px;
+  h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    font-weight: 400;
+    a {
+      color: var(--main-text-color);
+    }
+  }
 
-  letter-spacing: 0.0325em;
-}
-
-section h2 a {
-  color: #000;
-  color: var(--main-text-color);
 }
 
 section time {
