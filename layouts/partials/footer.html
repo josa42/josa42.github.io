@@ -1,8 +1,6 @@
-<a rel="me" href="https://mastodon.social/@josa" style="display: none;">Mastodon</a>
-
 <div class="icons">
 {{ range $.Site.Params.social }}
-  <a title="{{ .label }}" href="{{ .link }}">
+  <a title="{{ .label }}" href="{{ .link }}" rel="me">
     {{ partial "svg" .icon }}
   </a>
 {{ end }}
