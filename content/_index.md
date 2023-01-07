@@ -1,5 +1,5 @@
 ---
-title: Profile
+title: About
 menu: main
 weight: -100
 ---

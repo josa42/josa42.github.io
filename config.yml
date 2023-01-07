@@ -41,7 +41,7 @@ params:
     #   icon: icons/rss
 
 permalinks:
-  post: "/:year-:month-:day-:title"
+  post: "/blog/:filename"
   page: "/:title"
 
 

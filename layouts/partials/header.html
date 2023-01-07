@@ -1,14 +1,14 @@
 
 <section id="header">
   <h1>
-    <a href="{{.Site.BaseURL}}">{{.Site.Title}}</a>
+    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   </h1>
 </section>
 
 <section id="page-navigation">
   {{ range .Site.Menus.main.ByWeight }}
-    {{ if or (not .Page.IsSection) (.Page.Pages)}}
-      {{ .Pre }}<a href="{{.URL}}" {{if $.Page.IsMenuCurrent "main" . }}class="active"{{end}}>{{ .Name }}</a>
+    {{ if or (not .Page.IsSection) (.Page.Pages) }}
+      {{ .Pre }}<a href="{{ .URL }}" {{ if $.Page.IsMenuCurrent "main" . }}class="active"{{ end }}>{{ .Name }}</a>
     {{ end }}
-  {{end}}
+  {{ end }}
 </section>

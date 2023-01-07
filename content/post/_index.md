@@ -1,5 +1,6 @@
 ---
-title: Posts
+title: Blog
 menu: main
 weight: 2
+url: /blog
 ---
