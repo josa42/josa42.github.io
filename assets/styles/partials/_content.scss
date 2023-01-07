@@ -14,12 +14,25 @@ section article > * {
 }
 
 section {
+  h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    &, a, a:visited {
+      color: var(--main-text-color);
+    }
+  }
+
+
   h2 {
-    font-size: 1.3em;
+    &, a, a:visited {
+      font-size: 1.3em;
+      font-weight: 500;
+    }
+    margin-bottom: 6px;
   }
 
   h3 {
     font-size: 1.2em;
+    font-weight: 450;
 
     border-bottom: 1px solid var(--main-sub-text-color);
     padding-bottom: 8px;
@@ -28,17 +41,9 @@ section {
 
   h4, h5, h6 {
     font-size: 1.2em;
+    font-weight: 450;
     margin-bottom: 24px;
   }
-
-  h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
-    font-weight: 400;
-    a {
-      color: var(--main-text-color);
-    }
-  }
-
 }
 
 
