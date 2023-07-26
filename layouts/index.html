@@ -1,14 +1,14 @@
 {{ define "main" }}
 <main>
   <section class="profile-head">
-    {{ partial "img" (dict
-      "path" "images/avatar.png"
-      "class" "avatar"
-      "resize" "360x360"
-    ) }}
-
+    <div class="avatar">
+      {{ partial "img" (dict
+        "path" "images/avatar.png"
+        "resize" "360x360"
+      ) }}
+    </div>
     <div class="text">Hello World!</div>
-  </section>
+  </div>
 
   <!--
   <section>

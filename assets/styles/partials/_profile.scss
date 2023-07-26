@@ -1,11 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
-  // --icons-color-avatar: var(--main-bg-highlight-color);
-  --icons-color-avatar: #d4d4d4;
+  --avatar-border-color: #d4d4d4;
+  --avatar-background-color-2: rgba(160,160,160,1);
+  --avatar-background-color-1: rgba(98,133,156,1);
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    --icons-color-avatar: #3C3C3C;
+    --avatar-border-color: #3C3C3C;
+    --avatar-background-color-1: rgb(52, 74, 89);
+    --avatar-background-color-2: rgb(38, 38, 38);
   }
 }
 
@@ -18,18 +26,26 @@ body {
   grid-template-rows: 200px;
 
   .avatar {
-    background-color: var(--icons-color-avatar);
+    background-color: rgb(38,38,38);
+    background: linear-gradient(180deg, var(--avatar-background-color-1) 0%, var(--avatar-background-color-2) 100%);
     border-radius: 50%;
 
     width: 180px;
     height: 180px;
 
-    border: 10px solid var(--icons-color-avatar);
+    border: 4px solid var(--avatar-border-color);
+
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      padding: 14px 4px 0 10px;
+    }
   }
 
   .text {
     font-size: 48px;
-    // font-style: italic;
     font-family: Menlo, monospace;
     display: flex;
     align-items: center;
